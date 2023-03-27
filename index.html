@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="./srcipt/aos.js" defer></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favicon-32x32.png">
+
+    <!-- Dynamic styles -->
+    <script src="./srcipt/styles.js" defer></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <i id="color-changer" onclick="onClickHandler()" class="fa-solid fa-sun"></i>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#certificates">Certificates</a>
+                </li>
+
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                <h3 class="about-name">Kaloyan Yordanov</h3>
+                I am a motivated, energetic and progress-driven student, eager to start my professional development
+                journey. I like to discover new things and that motivates me to learn different technologies.
+                In my free time I like coding, gaming, playing different kind of sports.
+            </div>
+
+            <div class="img-wrapper" data-aos="fade-left" data-aos-delay="200"></div>
+        </section>
+
+        <section id="skills">
+
+            <h2 class="title" data-aos="fade-up" data-aos-delay="200">My Skills</h2>
+            <div class="divider" data-aos="fade-up" data-aos-delay="200"></div>
+
+
+            <div class="container" data-aos="fade-up" data-aos-delay="200">
+                <article class="img-icon-wrapper">
+                    <i class="fa-brands fa-js"></i>
+                </article>
+
+                <article class="img-icon-wrapper">
+                    <i class="fa-brands fa-react"></i>
+                </article>
+
+                <article class="img-icon-wrapper">
+                    <i class="fa-brands fa-html5"></i>
+                </article>
+
+                <article class="img-icon-wrapper">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </article>
+
+
+                <article class="img-icon-wrapper">
+                    <i class="fa-brands fa-npm"></i>
+                </article>
+
+                <article class="img-icon-wrapper-mongo">
+                    <img src="./images/mongo.svg"></i>
+                </article>
+
+                <article class="img-icon-wrapper-mongo">
+                    <img src="./images/styled-components-1.svg"></i>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="projects-title" data-aos="fade-up" data-aos-delay="200">Projects</h2>
+
+            <div class="divider" data-aos="fade-up" data-aos-delay="200"></div>
+
+            <div class="projects-container">
+
+
+                <article class="project-card">
+                    <div class="project-info" data-aos="fade-right" data-aos-delay="200">
+                        <h3>E-Commerce App</h3>
+                        <p class="project-info__description">
+                            E-Commerce App is a React project, which
+                            is created by many
+                            sections. Is has
+                            Sign-In and
+                            Sign-Up pages, as
+                            well as Google-Sign-Up. You can
+                            add your desire products to the card, which dynamicly changes due to what you added to the
+                            card. This project shows how I can work with the state and the
+                            context of a React
+                            application,
+                            how I use different hooks, as well as how I use Firebase and some of its
+                            functionalities
+                            (Firestore, Authentication), how I can navigate
+                            through the different
+                            sections
+                            (React-Router-
+                            DOM), how do I style (Styled-Components).
+                        </p>
+
+                        <div class="project-info-links">
+                            <a href="https://github.com/Kalo116/E-Commerce-App" target="_blank"
+                                class="project-link">Source</a>
+                            <a href="https://shop-website-k-y.netlify.app/" target="_blank"
+                                class="project-link">Review</a>
+                        </div>
+                    </div>
+
+                    <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./images/projects/e-comers-shop-website.png" alt="">
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Shoe Website</h3>
+                        <p class="project-info__description">
+                            Shoe Webside Project is a full responsive React project,
+                            which is created by many sections.
+                            Is has Sign-In and Sign-Up pages, as
+                            well as Google-Sign-Up. It authentication works thanks to Firebase.
+                            In the shop section there are several small functionalities that show how I can work with
+                            the state of a React application. I used Sass for style and React-Router-Dom for routing
+                            between different sections. For the
+                            authentication I
+                            used Firebase.
+                        </p>
+
+                        <div class="project-info-links">
+                            <a href="https://github.com/Kalo116/Shoe-Website" target="_blank"
+                                class="project-link">Source</a>
+                            <a href="https://shoe-website-k-y.netlify.app/" target="_blank"
+                                class="project-link">Review</a>
+                        </div>
+                    </div>
+
+                    <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./images/projects/9cc0a9e13f90f1ce29f5fe1002de97d9.jpg" alt="">
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Weather App</h3>
+                        <p class="project-info__description">
+                            Weather App is simple project, build from HTML, CSS and JavaScript. It uses API from
+                            OpneWeather. This project shows how I can work with different API's. All you have to do is enter the name of the city or country and it will show
+                            you the weather at the moment.
+                        </p>
+
+                        <div class="project-info-links">
+                            <a href="https://github.com/Kalo116/Weather-App" target="_blank"
+                                class="project-link">Source</a>
+                            <a href="https://weather-app-k-y.netlify.app/" target="_blank"
+                                class="project-link">Review</a>
+                        </div>
+                    </div>
+
+                    <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./images/projects/weather-app-img.png" alt="">
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Expense Tracker</h3>
+                        <p class="project-info__description">
+                            Expense Tracker is a simple project, build from HTML, CSS and JavaScript. It calculates and
+                            shows you balance, as well as your expenses and income. It has history so you can check what
+                            you have entered and even when you reload the page, your history will be there, due to
+                            localStore.
+                        </p>
+
+                        <div class="project-info-links">
+                            <a href="https://github.com/Kalo116/Expence-Tracker" class="project-link"
+                                target="_blank">Source</a>
+                            <a href="https://expense-tracker-k-y.netlify.app/" class="project-link"
+                                target="_blank">Review</a>
+                        </div>
+                    </div>
+
+                    <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./images/projects/expense-tracker.png" alt="">
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+                    <div class="project-info" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Password Generator</h3>
+                        <p class="project-info__description">
+                            Password Generator is a simple project, build from HTML, CSS and JavaScript. It includes
+                            many different small functionalities, like how strong your password is, what you would like
+                            your password to contain - symbols, numbers, lowercase and/or uppercase letters, and how
+                            long the password can be.
+                        </p>
+
+                        <div class="project-info-links">
+                            <a href="https://github.com/Kalo116/Password-Generator" target="_blank"
+                                class="project-link">Source</a>
+                            <a href="https://password-generator-k-y.netlify.app/" target="_blank"
+                                class="project-link">Review</a>
+                        </div>
+                    </div>
+
+                    <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./images/projects/passwird-generator.png" alt="">
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2 class="title" data-aos="fade-up" data-aos-delay="200">Certificates</h2>
+            <div class="divider" data-aos="fade-up" data-aos-delay="200"></div>
+
+            <div class="conatainer-certificates">
+                <div class="first-row">
+
+                    <article class="card" data-aos="fade-up" data-aos-delay="200">
+                        <img class="img"
+                            src="./images/certificates/Programming Fundamentals with JS - September 2021 - Certificate.jpeg"
+                            alt="">
+                        <div class="overlay">
+                            <h1 class="overlay__title">Programming Fundamentals with JS</h1>
+                            <p class="overlay__date">Date:September 2021</p>
+                            <p class="overlay__link">Link to certificate: <a
+                                    href="https://softuni.bg/certificates/details/119753/0d260064" target="_blank">Click
+                                    here
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card" data-aos="fade-up" data-aos-delay="200">
+                        <img class="img" src="./images/certificates/JS Advanced - January 2022 - Certificate (1).jpeg"
+                            alt="">
+                        <div class="overlay">
+                            <h1 class="overlay__title">JS Advanced 2022</h1>
+                            <p class="overlay__date">Date:January 2022</p>
+                            <p class="overlay__link">Link to certificate: <a
+                                    href="https://softuni.bg/certificates/details/126514/402b30a7" target="_blank">Click
+                                    here
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card" data-aos="fade-up" data-aos-delay="200">
+                        <img class="img"
+                            src="./images/certificates/JS Applications - February 2022 - Certificate (1).jpeg" alt="">
+                        <div class="overlay">
+                            <h1 class="overlay__title">JS Applications 2022</h1>
+                            <p class="overlay__date">Date:February 2022</p>
+                            <p class="overlay__link">Link to certificate: <a
+                                    href="https://softuni.bg/certificates/details/130520/ef15eb4d" target="_blank">Click
+                                    here
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card" data-aos="fade-up" data-aos-delay="200">
+                        <img class="img" src="./images/certificates/JS Back-End - May 2022 - Certificate.jpeg" alt="">
+                        <div class="overlay">
+                            <h1 class="overlay__title">JS Back-End 2022</h1>
+                            <p class="overlay__date">Date:May 2022</p>
+                            <p class="overlay__link">Link to certificate: <a
+                                    href="https://softuni.bg/certificates/details/137103/65ec4712" target="_blank">Click
+                                    here
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card" data-aos="fade-up" data-aos-delay="200">
+                        <img class="img" src="./images/certificates/HTML & CSS - September 2022 - Certificate.jpeg"
+                            alt="">
+                        <div class=" overlay">
+                            <h1 class="overlay__title">HTML & CSS 2022</h1>
+                            <p class="overlay__date">Date:September 2022</p>
+                            <p class="overlay__link">Link to certificate: <a
+                                    href="https://softuni.bg/certificates/details/147203/db413386" target="_blank">Click
+                                    here
+                                </a>
+                            </p>
+                    </article>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="contacts">
+            <h2 class="title" data-aos="fade-up" data-aos-delay="200">Contacts and social media</h2>
+            <div class="divider" data-aos="fade-up" data-aos-delay="200"></div>
+
+            <div class="all-information">
+
+                <div class="info" data-aos="fade-up" data-aos-delay="200">
+                    <p class="info__p">
+                        I am always open to discuss new projects, creative ideas
+                        or
+                        opportunities to be part of your vision
+                    </p>
+                    <article class="info__links">
+                        <ul class="info__list" role="list">
+                            <li class="info__item">
+                                <a href="https://mail.google.com/mail/u/0/#inbox?compose=xQTrpGrxrXdZdWTvnfCQTWrSbnwlBzvmmSvxmXrjHLDPJTDGgcdgMkQSqwSWbqHScNWFwkjQdShvSqzKDPqkpDSPdbxKWPGwjGkfTtwNDnSgCZKjNrSWM"
+                                    target="_blank">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </li>
+
+                            <li class="info__item">
+                                <a href="https://www.linkedin.com/in/kaloyan-yordanov-ab9599249/" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+
+                            <li class="info__item">
+                                <a href="https://github.com/Kalo116" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+#skills {
+    background-color: #131313;
+    /* border-bottom: 5px dotted #684949; */
+    color: #fff;
+}
+
+#skills .title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 2rem 0 0 0;
+}
+
+.divider {
+    height: 3px;
+    width: 7rem;
+    background-color: red;
+    margin: 0 auto;
+}
+
+#skills .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 0 15px 3rem 15px;
+}
+
+#skills .container .img-icon-wrapper i{
+    width: 140px;
+    height: 105px;
+    font-size: 140px;
+    color: #fff;
+}
+
+#skills .container .img-icon-wrapper-mongo{
+    width: 127px;
+    height: 125px;
+    color: #fff;
+}
+
+#skills .container .img-icon-wrapper-mongo img{
+    width: 100%;
+    height: 100%;
+}

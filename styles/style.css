@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@import url('./all-styles/reset.css');
+@import url('./all-styles/header.css');
+@import url('./all-styles/about.css');
+@import url('./all-styles/skills.css');
+@import url('./all-styles/certificates.css');
+@import url('./all-styles/contacts.css');
+@import url('./all-styles/projects.css');
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
