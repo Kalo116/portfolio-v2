@@ -23,7 +23,7 @@
     margin-bottom: 3rem;
 }
 
-.conatainer-certificates .first-row {
+.conatainer-certificates .certificates-row {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
