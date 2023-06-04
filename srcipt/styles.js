@@ -2,6 +2,7 @@ let sections = Array.from(document.querySelectorAll('section'));
 let h2s = Array.from(document.querySelectorAll('h2'));
 let skillIcons = Array.from(document.querySelectorAll('.img-icon-wrapper i'));
 let colorIcon = document.querySelector('#color-changer');
+let emailIcon = document.querySelector('.email-icon');
 
 
 function onClickHandler() {
@@ -44,6 +45,10 @@ const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.nav-bar');
 
 hamburger.onclick = function () {
-
     navbar.classList.toggle('active');
 };
+
+emailIcon.addEventListener('click', (e) => {
+    console.log(`clicked email`);
+    console.log(`${e.value}`);
+});
