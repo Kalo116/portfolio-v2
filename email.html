@@ -21,7 +21,7 @@
     <link rel="icon" href="favicon/favicon-32x32.png">
 
     <!-- Dynamic styles -->
-    <script src="./srcipt/styles.js" defer></script>
+    <script src="./srcipt/email.js" defer></script>
 
     <title>Email Me</title>
 </head>
@@ -59,7 +59,42 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+
+    <main>
+        <section id="mail">
+
+            <h2 class="email-title" data-aos="fade-up" data-aos-delay="200">Email me</h2>
+            <div class="divider" data-aos="fade-up" data-aos-delay="200"></div>
+
+            <div class="mail-container">
+                <img src="./favicon/remote-work-male-svgrepo-com.svg" alt="" data-aos="fade-right" data-aos-delay="200">
+
+                <form class="mail-form" data-aos="fade-left" data-aos-delay="200">
+                    <div class="input-area">
+                        <label for="fullName">Name</label>
+                        <input type="text" id="fullName" name="from_name" required>
+                    </div>
+                    <div class="input-area">
+                        <label for="email_id">Email</label>
+                        <input type="text" id="email_id" name="email_id" required>
+                    </div>
+                    <div class="input-area">
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message" required></textarea>
+                    </div>
+                    <button class="send-button" type="submit">Send Email</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
 </body>
+
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('At-IGF86N93SleE_O')
+</script>
 
 </html>

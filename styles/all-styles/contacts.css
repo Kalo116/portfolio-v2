@@ -53,12 +53,6 @@
     margin-bottom: 2.5rem;
 }
 
-.info__list .info__item:hover{
-    transition: transform .5s;
-    transform: scale(1.4); 
-}
-
-
 @media screen and (max-width:1576px) {
     #contacts .info {
         width: 35%;

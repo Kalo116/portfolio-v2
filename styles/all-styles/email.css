@@ -1,0 +1,109 @@
+#mail {
+    width: 100%;
+    height: 100vh;
+    background-color: #131313;
+}
+
+#mail .email-title {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+#mail .mail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+#mail .mail-container img {
+    width: 360px;
+}
+
+#mail .mail-container .mail-form {
+    width: 500px;
+    background: #FFF;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 39px 5px rgba(205, 113, 50, 1);
+    gap: 10px;
+}
+
+#mail .mail-container .mail-form .input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#mail .mail-container .mail-form .input-area textarea {
+    padding: 10px 70px 61px 11px;
+    border: 2px solid black;
+    width: 380px;
+    height: 270px;
+}
+
+#mail .mail-container .mail-form .input-area textarea:focus {
+    outline: none;
+    border: 2px solid orange;
+}
+
+#mail .mail-container .mail-form .input-area input {
+    padding: 5px 25px 5px 3px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+}
+
+#mail .mail-container .mail-form input:focus {
+    outline: none;
+    border: 2px solid orange;
+}
+
+#mail .mail-container .mail-form button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    outline: none;
+}
+
+#mail .mail-container .mail-form button:hover {
+    background-color: #cd7132;
+    outline: none;
+}
+
+@media screen and (max-width:920px) {
+    #mail .mail-container img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:530px) {
+    #mail .mail-container .mail-form {
+        width: 430px;
+    }
+
+    #mail .mail-container .mail-form .input-area textarea {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:460px) {
+    
+    #mail .mail-container .mail-form {
+        width: 340px;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    #mail .mail-container .mail-form .input-area {
+        flex-direction: column;
+    }
+}
