@@ -48,6 +48,7 @@
     border: 2px solid black;
     width: 380px;
     height: 270px;
+    border-radius: 10px;
 }
 
 #mail .mail-container .mail-form .input-area textarea:focus {
@@ -72,10 +73,14 @@
     border-radius: 20px;
     border: 0.5px solid black;
     outline: none;
+    cursor: pointer;
 }
 
 #mail .mail-container .mail-form button:hover {
     background-color: #cd7132;
+    outline: none;
+    color: #fff;
+    border: 1px solid #cd7132;
     outline: none;
 }
 
