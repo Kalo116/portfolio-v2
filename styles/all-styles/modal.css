@@ -1,0 +1,157 @@
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.5s;
+}
+
+/* Modal Content */
+.modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    border-radius: 8px;
+    animation: slideDown 0.6s ease-out;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    position:absolute;
+    top: 0;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Blur background when modal is open */
+body.modal-open main,
+body.modal-open header {
+    filter: blur(5px);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Form Styles */
+.mail-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-area label {
+    font-weight: 600;
+    color: #444;
+}
+
+.input-area input,
+.input-area textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-area input:focus,
+.input-area textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Textarea Styling */
+.input-area textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button Styles */
+.send-button {
+    padding: 12px 18px;
+    background-color: #cd7132;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.send-button:hover {
+    background-color: #a45017;
+    transform: translateY(-3px);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

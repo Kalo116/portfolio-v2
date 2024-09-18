@@ -36,7 +36,7 @@
     justify-content: center;
     gap: 15px;
     border-radius: 20px;
-    box-shadow: 0px 0px 39px 5px rgba(205, 113, 50, 1);
+    border: 1px solid #fff;
     padding: 23px 31px;
 }
 

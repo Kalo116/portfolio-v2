@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 @import url('./all-styles/reset.css');
 @import url('./all-styles/header.css');
@@ -7,6 +7,7 @@
 @import url('./all-styles/certificates.css');
 @import url('./all-styles/contacts.css');
 @import url('./all-styles/projects.css');
+@import url('./all-styles/modal.css');
 @import url('./all-styles/email.css');
 
 body {
@@ -16,4 +17,8 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+main{
+    overflow: hidden;
 }

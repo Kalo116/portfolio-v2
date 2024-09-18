@@ -69,19 +69,38 @@
 }
 
 #mail .mail-container .mail-form button {
-    padding: 10px;
+    position: relative;
+    padding: 10px 20px;
     border-radius: 20px;
     border: 0.5px solid black;
     outline: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px; 
+    overflow: hidden; 
 }
 
-#mail .mail-container .mail-form button:hover {
-    background-color: #cd7132;
-    outline: none;
-    color: #fff;
-    border: 1px solid #cd7132;
-    outline: none;
+.email-loader {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: none;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width:920px) {
@@ -101,7 +120,6 @@
 }
 
 @media screen and (max-width:460px) {
-    
     #mail .mail-container .mail-form {
         width: 340px;
         height: auto;

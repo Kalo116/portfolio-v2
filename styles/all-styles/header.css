@@ -7,107 +7,114 @@
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 80px;
-    background-color: #cd7132;
+    height: 60px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
-    position: relative;
-    z-index: 2;
-}
-
-#header i {
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #fff;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    background-color: transparent;
 }
 
 .hamburger {
-    display: none;
-}
-
-.nav-bar ul {
+    cursor: pointer;
+    z-index: 1001;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
 }
 
-.nav-bar ul li a {
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: #cd7132; /* Change this to match your desired color */
+    transition: 0.3s;
+}
+
+#color-changer {
+    color: #ffffff; /* Change this to match your desired color */
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(78, 70, 66, 0.2); /* Reduced opacity for transparency */
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.side-nav.active {
+    left: 0;
+}
+
+.side-nav ul {
+    padding-top: 80px;
+}
+
+.side-nav ul li {
+    margin-bottom: 20px;
+}
+
+.side-nav ul li a {
     display: block;
     color: #fefefe;
     font-size: 20px;
     padding: 10px 25px;
-    border-radius: 50px;
     transition: 0.2s;
-    margin: 0 5px;
 }
 
-.nav-bar ul li a:hover {
-    color: #11101b;
+.side-nav ul li a:hover {
+    color: rgb(110, 206, 21);
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(110, 206, 21, 0.7);
 }
 
-@media only screen and (max-width:1320px) {
+/* Hamburger animation */
+.hamburger .line {
+    background-color: #ffffff;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media only screen and (max-width: 1320px) {
     #header {
         padding: 0 50px;
     }
 }
 
-@media only screen and (max-width:1110px) {
+@media only screen and (max-width: 1100px) {
     #header {
         padding: 0 30px;
     }
 }
 
-@media only screen and (max-width:900px) {
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger .line {
-        width: 30px;
-        height: 3px;
-        background: #fff;
-        margin: 6px 0;
-    }
-
-    .nav-bar {
-        height: 0px;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background: #cd7132;
-        transition: 0.5s;
-        overflow: hidden;
-    }
-
-    .nav-bar.active {
-        height: 300px;
-    }
-
-    .nav-bar ul {
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-        margin: 30px auto;
-    }
-
-    .nav-bar.active ul {
-        opacity: 1;
-    }
-
-    .nav-bar ul li a {
-        margin-bottom: 12px;
+@media only screen and (max-width: 900px) {
+    .side-nav {
+        width: 100%;
+        left: -100%;
     }
 }
