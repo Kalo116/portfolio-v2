@@ -26,6 +26,10 @@
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <title>Portfolio</title>
 </head>
 
@@ -51,20 +55,26 @@
 
     <main>
         <section id="about">
-            <div class="about-text" data-aos="fade-right" data-aos-delay="200">
-                <h1 class="about-name">Kaloyan Yordanov</h1>
-                <div class="span-container">
-                    <span><i class="fas fa-map-marker-alt"></i> Located in Sofia, Bulgaria</span>
-                    <span><i class="fas fa-circle status-dot"></i> Available for a full-time position</span>
+            <div class="content-wrapper">
+                <div class="text-content" data-aos="fade-right" data-aos-delay="200">
+                    <h2 class="about-position">Junior Front-End Web Developer</h2>
+                    <h1 class="about-name">Kaloyan Yordanov</h1>
+                    <div class="span-container">
+                        <span><i class="fas fa-map-marker-alt"></i>
+                            Located in Sofia, Bulgaria</span>
+                        <span><i class="fas fa-circle status-dot"></i> Available for a full-time position</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="img-wrapper" data-aos="fade-up" data-aos-delay="200">
-                <img src="./images/IMG_5997 (1).jpg" alt="">
-            </div>
-
-            <div class="about-position-container" data-aos="fade-left" data-aos-delay="200">
-                <h1 class="about-position">Junior Front-End<br>Developer</h1>
+                <div class="img-wrapper" data-aos="fade-left" data-aos-delay="200">
+                    <div class="spot"></div>
+                    <div class="spot"></div>
+                    <div class="spot"></div>
+                    <div class="spot"></div>
+                    <div class="spot"></div>
+                    <div class="spot"></div>
+                    <img src="./images/IMG_5997 (1).jpg" alt="Kaloyan Yordanov">
+                </div>
             </div>
         </section>
 
@@ -86,6 +96,10 @@
                 <article class="img-icon-wrapper">
                     <i class="devicon-react-original"></i>
                 </article>
+                <!-- 
+                <article class="img-icon-wrapper">
+                    <i class="devicon-redux-original"></i>
+                </article> -->
 
                 <article class="img-icon-wrapper">
                     <i class="devicon-html5-plain"></i>
@@ -113,64 +127,72 @@
 
         <section id="projects">
             <h2 class="projects-title" data-aos="fade-up" data-aos-delay="200">Projects</h2>
-
             <div class="divider" data-aos="fade-up" data-aos-delay="200"></div>
-
             <div class="projects-container">
-
-
                 <article class="project-card">
                     <div class="project-info" data-aos="fade-right" data-aos-delay="200">
-                        <h3>E-Commerce App</h3>
-                        <p class="project-info__description">
-                            E-Commerce App is a React project, which
-                            is created by many
-                            sections. Is has
-                            Sign-In and
-                            Sign-Up pages, as
-                            well as Google-Sign-Up. You can
-                            add your desire products to the card, which dynamicly changes due to what you added to the
-                            card. This project shows how I can work with the state and the
-                            context of a React
-                            application,
-                            how I use different hooks, as well as how I use Firebase and some of its
-                            functionalities
-                            (Firestore, Authentication), how I can navigate
-                            through the different
-                            sections
-                            (React-Router-
-                            DOM), how do I style (Styled-Components).
-                        </p>
-
+                        <header class="project-header">
+                            <h3>Tot Academy</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React Router</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                        </header>
+                        <div class="project-details">
+                            <h4>About</h4>
+                            <p class="project-info__description">
+                                I worked for a client within 6 months. The project involved
+                                creating a responsive website. The goal was to build a professional website that
+                                represents the client's business. The site is an educational platform developed for
+                                Tot Academy, featuring a complex course pricing system with dynamic rates based on 
+                                course levels and types, along with comprehensive student resources.
+                            </p>
+                            <h4>Key Features</h4>
+                            <ul class="feature-list">
+                                <li>Dynamic pricing based on course level</li>
+                                <li>Interactive course catalog and pricing table</li>
+                                <li>Carousel images and comments section</li>
+                                <li>Course management system</li>
+                                <li>Responsive design</li>
+                            </ul>
+                        </div>
                         <div class="project-info-links">
-                            <a href="https://github.com/Kalo116/Shop-Website" target="_blank"
-                                class="project-link">Source</a>
-                            <a href="https://shop-website-k-y.netlify.app/" target="_blank"
-                                class="project-link">Review</a>
+                            <a href="https://totacademy.bg" target="_blank" class="project-link">Review</a>
                         </div>
                     </div>
-
                     <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
-                        <img src="./images/projects/e-comers-shop-website.png" alt="">
+                        <img src="./images/projects/tot-academy.png" alt="Tot Academy Website Preview">
                     </div>
-
                 </article>
 
                 <article class="project-card">
                     <div class="project-info" data-aos="fade-right" data-aos-delay="200">
-                        <h3>Shoe Website</h3>
-                        <p class="project-info__description">
-                            Shoe Webside Project is a full responsive React project,
-                            which is created by many sections.
-                            Is has Sign-In and Sign-Up pages, as
-                            well as Google-Sign-Up. It authentication works thanks to Firebase.
-                            In the shop section there are several small functionalities that show how I can work with
-                            the state of a React application. I used Sass for style and React-Router-Dom for routing
-                            between different sections. For the
-                            authentication I
-                            used Firebase.
-                        </p>
-
+                        <header class="project-header">
+                            <h3>Shoe Website</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Sass</span>
+                                <span class="tech-tag">React Router</span>
+                            </div>
+                        </header>
+                        <div class="project-details">
+                            <h4>About</h4>
+                            <p class="project-info__description">
+                                A full responsive e-commerce platform for shoes with user authentication and shopping
+                                cart functionality.
+                            </p>
+                            <h4>Key Features</h4>
+                            <ul class="feature-list">
+                                <li>Sign-In/Sign-Up with Google Authentication</li>
+                                <li>Dynamic shopping cart management</li>
+                                <li>Responsive design for all devices</li>
+                                <li>State management with React</li>
+                            </ul>
+                        </div>
                         <div class="project-info-links">
                             <a href="https://github.com/Kalo116/Shoe-Website-project" target="_blank"
                                 class="project-link">Source</a>
@@ -178,23 +200,71 @@
                                 class="project-link">Review</a>
                         </div>
                     </div>
-
                     <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
-                        <img src="./images/projects/9cc0a9e13f90f1ce29f5fe1002de97d9.jpg" alt="">
+                        <img src="./images/projects/9cc0a9e13f90f1ce29f5fe1002de97d9.jpg" alt="Shoe Website Preview">
                     </div>
-
                 </article>
 
                 <article class="project-card">
                     <div class="project-info" data-aos="fade-right" data-aos-delay="200">
-                        <h3>Weather App</h3>
-                        <p class="project-info__description">
-                            Weather App is simple project, build from HTML, CSS and JavaScript. It uses API from
-                            OpneWeather. This project shows how I can work with different API's. All you have to do is
-                            enter the name of the city or country and it will show
-                            you the weather at the moment.
-                        </p>
-
+                        <header class="project-header">
+                            <h3>E-Commerce App</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Styled Components</span>
+                                <span class="tech-tag">Context API</span>
+                            </div>
+                        </header>
+                        <div class="project-details">
+                            <h4>About</h4>
+                            <p class="project-info__description">
+                                Full-featured e-commerce platform with user authentication and dynamic shopping cart
+                                functionality.
+                            </p>
+                            <h4>Key Features</h4>
+                            <ul class="feature-list">
+                                <li>Google Authentication</li>
+                                <li>Dynamic shopping cart</li>
+                                <li>Firebase integration</li>
+                                <li>State management with Context API</li>
+                            </ul>
+                        </div>
+                        <div class="project-info-links">
+                            <a href="https://github.com/Kalo116/Shop-Website" target="_blank"
+                                class="project-link">Source</a>
+                            <a href="https://shop-website-k-y.netlify.app/" target="_blank"
+                                class="project-link">Review</a>
+                        </div>
+                    </div>
+                    <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./images/projects/e-comers-shop-website.png" alt="E-Commerce App Preview">
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-info" data-aos="fade-right" data-aos-delay="200">
+                        <header class="project-header">
+                            <h3>Weather App</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">OpenWeather API</span>
+                            </div>
+                        </header>
+                        <div class="project-details">
+                            <h4>About</h4>
+                            <p class="project-info__description">
+                                Real-time weather application using the OpenWeather API to display current weather
+                                conditions.
+                            </p>
+                            <h4>Key Features</h4>
+                            <ul class="feature-list">
+                                <li>City/Country weather search</li>
+                                <li>Real-time weather data</li>
+                                <li>API integration</li>
+                            </ul>
+                        </div>
                         <div class="project-info-links">
                             <a href="https://github.com/Kalo116/Weather-App" target="_blank"
                                 class="project-link">Source</a>
@@ -202,47 +272,68 @@
                                 class="project-link">Review</a>
                         </div>
                     </div>
-
                     <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
-                        <img src="./images/projects/weather-app-img.png" alt="">
+                        <img src="./images/projects/weather-app-img.png" alt="Weather App Preview">
                     </div>
-
                 </article>
-
                 <article class="project-card">
                     <div class="project-info" data-aos="fade-right" data-aos-delay="200">
-                        <h3>Expense Tracker</h3>
-                        <p class="project-info__description">
-                            Expense Tracker is a simple project, build from HTML, CSS and JavaScript. It calculates and
-                            shows you balance, as well as your expenses and income. It has history so you can check what
-                            you have entered and even when you reload the page, your history will be there, due to
-                            localStore.
-                        </p>
-
+                        <header class="project-header">
+                            <h3>Expense Tracker</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">LocalStorage</span>
+                            </div>
+                        </header>
+                        <div class="project-details">
+                            <h4>About</h4>
+                            <p class="project-info__description">
+                                Personal finance tracking application with persistent data storage.
+                            </p>
+                            <h4>Key Features</h4>
+                            <ul class="feature-list">
+                                <li>Balance calculation</li>
+                                <li>Income/Expense tracking</li>
+                                <li>Transaction history</li>
+                                <li>LocalStorage persistence</li>
+                            </ul>
+                        </div>
                         <div class="project-info-links">
-                            <a href="https://github.com/Kalo116/Expence-Tracker" class="project-link"
-                                target="_blank">Source</a>
-                            <a href="https://expense-tracker-k-y.netlify.app/" class="project-link"
-                                target="_blank">Review</a>
+                            <a href="https://github.com/Kalo116/Expence-Tracker" target="_blank"
+                                class="project-link">Source</a>
+                            <a href="https://expense-tracker-k-y.netlify.app/" target="_blank"
+                                class="project-link">Review</a>
                         </div>
                     </div>
-
                     <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
-                        <img src="./images/projects/expense-tracker.png" alt="">
+                        <img src="./images/projects/expense-tracker.png" alt="Expense Tracker Preview">
                     </div>
-
                 </article>
-
                 <article class="project-card">
                     <div class="project-info" data-aos="fade-right" data-aos-delay="200">
-                        <h3>Password Generator</h3>
-                        <p class="project-info__description">
-                            Password Generator is a simple project, build from HTML, CSS and JavaScript. It includes
-                            many different small functionalities, like how strong your password is, what you would like
-                            your password to contain - symbols, numbers, lowercase and/or uppercase letters, and how
-                            long the password can be.
-                        </p>
-
+                        <header class="project-header">
+                            <h3>Password Generator</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </header>
+                        <div class="project-details">
+                            <h4>About</h4>
+                            <p class="project-info__description">
+                                Customizable password generation tool with strength indicators and various options.
+                            </p>
+                            <h4>Key Features</h4>
+                            <ul class="feature-list">
+                                <li>Password strength indicator</li>
+                                <li>Customizable character sets</li>
+                                <li>Adjustable password length</li>
+                                <li>Special character options</li>
+                            </ul>
+                        </div>
                         <div class="project-info-links">
                             <a href="https://github.com/Kalo116/Password-Generator" target="_blank"
                                 class="project-link">Source</a>
@@ -250,13 +341,10 @@
                                 class="project-link">Review</a>
                         </div>
                     </div>
-
                     <div class="project-img-wrapper" data-aos="fade-left" data-aos-delay="200">
-                        <img src="./images/projects/passwird-generator.png" alt="">
+                        <img src="./images/projects/passwird-generator.png" alt="Password Generator Preview">
                     </div>
-
                 </article>
-
             </div>
         </section>
 
@@ -363,6 +451,127 @@
                 </div>
             </div>
 
+            <div class="swiper mySwiper certificates-mobile" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="swiper-slide">
+                        <article class="card">
+                            <img class="img"
+                                src="./images/certificates/Programming Fundamentals with JS - September 2021 - Certificate.jpeg"
+                                alt="">
+                            <div class="overlay">
+                                <h1 class="overlay__title">Programming Fundamentals with JS</h1>
+                                <p class="overlay__date">Date:September 2021</p>
+                                <p class="overlay__link">Link to certificate: <a
+                                        href="https://softuni.bg/certificates/details/119753/0d260064"
+                                        target="_blank">Click
+                                        here
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card">
+                            <img class="img"
+                                src="./images/certificates/JS Advanced - January 2022 - Certificate (1).jpeg" alt="">
+                            <div class="overlay">
+                                <h1 class="overlay__title">JS Advanced 2022</h1>
+                                <p class="overlay__date">Date:January 2022</p>
+                                <p class="overlay__link">Link to certificate: <a
+                                        href="https://softuni.bg/certificates/details/126514/402b30a7"
+                                        target="_blank">Click
+                                        here
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card">
+                            <img class="img"
+                                src="./images/certificates/JS Applications - February 2022 - Certificate (1).jpeg"
+                                alt="">
+                            <div class="overlay">
+                                <h1 class="overlay__title">JS Applications 2022</h1>
+                                <p class="overlay__date">Date:February 2022</p>
+                                <p class="overlay__link">Link to certificate: <a
+                                        href="https://softuni.bg/certificates/details/130520/ef15eb4d"
+                                        target="_blank">Click
+                                        here
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card">
+                            <img class="img" src="./images/certificates/JS Back-End - May 2022 - Certificate.jpeg"
+                                alt="">
+                            <div class="overlay">
+                                <h1 class="overlay__title">JS Back-End 2022</h1>
+                                <p class="overlay__date">Date:May 2022</p>
+                                <p class="overlay__link">Link to certificate: <a
+                                        href="https://softuni.bg/certificates/details/137103/65ec4712"
+                                        target="_blank">Click
+                                        here
+                                    </a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card">
+                            <img class="img" src="./images/certificates/HTML & CSS - September 2022 - Certificate.jpeg"
+                                alt="">
+                            <div class=" overlay">
+                                <h1 class="overlay__title">HTML & CSS 2022</h1>
+                                <p class="overlay__date">Date:September 2022</p>
+                                <p class="overlay__link">Link to certificate: <a
+                                        href="https://softuni.bg/certificates/details/147203/db413386"
+                                        target="_blank">Click
+                                        here
+                                    </a>
+                                </p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card">
+                            <img class="img" src="./images/certificates/ReactJS-February-2023.png" alt="">
+                            <div class=" overlay">
+                                <h1 class="overlay__title">ReactJS 2023</h1>
+                                <p class="overlay__date">Date:February 2023</p>
+                                <p class="overlay__link">Link to certificate: <a
+                                        href="https://softuni.bg/certificates/details/170086/6ec74a1b"
+                                        target="_blank">Click
+                                        here
+                                    </a>
+                                </p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card">
+                            <img class="img" src="./images/certificates/TypeScript.png" alt="">
+                            <div class=" overlay">
+                                <h1 class="overlay__title">TypeScript 2023</h1>
+                                <p class="overlay__date">Date:October 2023</p>
+                                <p class="overlay__link">Link to certificate: <a
+                                        href="https://softuni.bg/certificates/details/193721/6bb8555f"
+                                        target="_blank">Click
+                                        here
+                                    </a>
+                                </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
 
@@ -427,6 +636,7 @@
     </div>
 </body>
 
+
 <!-- EmailJS -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -434,5 +644,12 @@
     emailjs.init('At-IGF86N93SleE_O');
 </script>
 
+<!-- Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
+</script>
 
 </html>

@@ -11,6 +11,10 @@
     padding: 2rem 0 0 0;
 }
 
+#certificates .certificates-mobile {
+    display: none;
+}
+
 .divider {
     height: 3px;
     width: 7rem;
@@ -86,8 +90,106 @@
     color: #fff;
 }
 
+.swiper {
+    width: 340px;
+    height: 520px;
+    margin-bottom: 50px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide {
+    background-color: rgb(10, 184, 111);
+}
+
+.certificates-mobile {
+    padding: 50px 0;
+}
+
+.certificates-mobile .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificates-mobile .card {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    /* Adjust based on your needs */
+}
+
+.certificates-mobile .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.certificates-mobile .overlay {
+    width: 100%;
+    height: 100%;
+}
+
+.certificates-mobile .card .overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.certificates-mobile .card:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
 @media screen and (min-width:2480px) {
     .conatainer-certificates .certificates-row {
         gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 763px) {
+    #certificates .certificates-mobile {
+        display: block;
+    }
+
+    #certificates .certificates-row {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .swiper {
+        width: 260px;
+        height: 370px;
+    }
+
+    .certificates-mobile .overlay .overlay__title {
+        font-size: 18px;
+        margin-top: 20%;
+    }
+
+    .certificates-mobile .overlay .overlay__date {
+        font-size: 14px;
+        margin-top: 3%;
+    }
+
+    .certificates-mobile .overlay .overlay__link {
+        font-size: 16px;
+        margin-top: 3%;
     }
 }
